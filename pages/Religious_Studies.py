@@ -95,7 +95,7 @@ st.markdown("""
 st.sidebar.title("**Subjects**")
 st.sidebar.write("This contains all the subjects available! Just click to find all the resources")
 if st.sidebar.button("Religious Studies", width=100000):
-    st.switch_page("pages/Religious-Studies.py")
+    st.switch_page("pages/Religious_Studies.py")
 if st.sidebar.button("Biology", width=100000):
     st.switch_page("pages/Biology.py")
 if st.sidebar.button("Chemistry", width=100000):
@@ -113,9 +113,9 @@ if st.sidebar.button("Maths", width=100000):
 if st.sidebar.button("English", width=100000):
     st.switch_page("pages/English.py")
 if st.sidebar.button("Computer Science", width=100000):
-    st.switch_page("pages/Computer-Science.py")
+    st.switch_page("pages/Computer_Science.py")
 if st.sidebar.button("Further Maths", width=100000):
-    st.switch_page("pages/Further-Maths.py")
+    st.switch_page("pages/Further_Maths.py")
 st.sidebar.title("Home Redirect")
 st.sidebar.write("Press this button to go back to the home page. Thanks for visiting!")
 if st.sidebar.button("Home", width=100000):
