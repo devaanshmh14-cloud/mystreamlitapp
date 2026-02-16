@@ -124,7 +124,7 @@ if 'selected_pdf' not in st.session_state:
     st.session_state.selected_pdf = None
 
 # 2024 Past Papers
-st.markdown('<h2 class="float-title">2024 Past Papers</h2>', unsafe_allow_html=True)
+st.markdown('<h2 class="float-title">2025 Past Papers</h2>', unsafe_allow_html=True)
 
 if st.button("June 2024 Section 1: Buddhism", width=110000):
     st.session_state.selected_pdf = "pdfs_religious_studies/re.bub.pdf"  # FIXED PATH
