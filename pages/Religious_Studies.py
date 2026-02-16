@@ -1,9 +1,8 @@
 import streamlit as st
-import base64
 
 st.set_page_config(
     page_title="GCSE Study Resources",
-    page_icon="https://emojis.wiki/books/",
+    page_icon="📚",
 )
 
 PALETTE = {
@@ -121,40 +120,63 @@ st.sidebar.write("Press this button to go back to the home page. Thanks for visi
 if st.sidebar.button("Home", width=100000):
     st.switch_page("app.py")
 st.set_page_config(layout="wide")
-def display_pdf(file_path):
-    """Display PDF in Streamlit"""
-    with open(file_path, "rb") as f:
-        base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="100%" height="800" type="application/pdf"></iframe>'
-    st.markdown(pdf_display, unsafe_allow_html=True)
+
 st.markdown(
-    '<h2 class="float-title">2024 Past Papers</h2>',
+    '<h2 class="float-title">Past Papers</h2>',
     unsafe_allow_html=True
 )
 if 'selected_pdf' not in st.session_state:
     st.session_state.selected_pdf = None
 
 if st.button("June 2024 Section 1: Buddhism", width=110000):
-    st.session_state.selected_pdf = "pdfs/re.bub.pdf"
+    pdf_url = "https://drive.google.com/file/d/1-kutIMn3M9bsQHYt5shR29foo0_XOBy4/preview"
+    if st.session_state.selected_pdf == pdf_url:
+        st.session_state.selected_pdf = None
+    else:
+        st.session_state.selected_pdf = pdf_url
+
 if st.button("June 2024 Section 2: Christianity", width=110000):
-    st.session_state.selected_pdf = "pdfs/re.chri.pdf"
+    pdf_url = "https://drive.google.com/file/d/17Wpn-MTvcxyr9si_L4gxuWDGAcCDcGJt/preview"
+    if st.session_state.selected_pdf == pdf_url:
+        st.session_state.selected_pdf = None
+    else:
+        st.session_state.selected_pdf = pdf_url
+
 if st.button("June 2024 Section 5: Thematics", width=110000):
-    st.session_state.selected_pdf = ("pdfs/re.the.pdf")
+    pdf_url = "https://drive.google.com/file/d/1GP38TMIZK4HAuY0YRJC1ii3P4dMHnzt3/preview"
+    if st.session_state.selected_pdf == pdf_url:
+        st.session_state.selected_pdf = None
+    else:
+        st.session_state.selected_pdf = pdf_url
 
 st.markdown(
-    '<h2 class="float-title">2024 Mark Schemes</h2>',
+    '<h2 class="float-title">Mark Schemes</h2>',
     unsafe_allow_html=True
 )
 
 if st.button("June 2024 Mark Scheme: Buddhism", width=110000):
-    st.session_state.selected_pdf = "pdfs/re.bms.pdf"
+    pdf_url = "https://drive.google.com/file/d/1BMGHMznoV8La0-mvXa5AjktkXa40kb59/preview"
+    if st.session_state.selected_pdf == pdf_url:
+        st.session_state.selected_pdf = None
+    else:
+        st.session_state.selected_pdf = pdf_url
+
 if st.button("June 2024 Mark Scheme: Christianity", width=110000):
-    st.session_state.selected_pdf = "pdfs/re.cms.pdf"
+    pdf_url = "https://drive.google.com/file/d/1YnKsjoYVPHbZA2VDHrrKOpQefYYCarsE/preview"
+    if st.session_state.selected_pdf == pdf_url:
+        st.session_state.selected_pdf = None
+    else:
+        st.session_state.selected_pdf = pdf_url
+
 if st.button("June 2024 Mark Scheme: Thematics", width=110000):
-    st.session_state.selected_pdf = "pdfs/re.tms.pdf"
+    pdf_url = "https://drive.google.com/file/d/1T5UR0o7mFYPf8LlzO3mRNiHHjoiaYq8n/preview"
+    if st.session_state.selected_pdf == pdf_url:
+        st.session_state.selected_pdf = None
+    else:
+        st.session_state.selected_pdf = pdf_url
 
 if st.session_state.selected_pdf:
-    display_pdf(st.session_state.selected_pdf)
+    st.markdown(f'<iframe src="{st.session_state.selected_pdf}" width="100%" height="800"></iframe>', unsafe_allow_html=True)
 
 st.markdown(
     '<h2 class="float-title">Useful Youtube Videos</h2>',
@@ -165,19 +187,39 @@ if 'selected_video' not in st.session_state:
     st.session_state.selected_video = None
 
 if st.button("Religion 1: Christianity", width=110000):
-    st.session_state.selected_video = "https://youtu.be/Fad9NuKcDdo?si=wpOOGWZEmrphXi5Q"
+    video_url = "https://youtu.be/Fad9NuKcDdo?si=wpOOGWZEmrphXi5Q"
+    if st.session_state.selected_video == video_url:
+        st.session_state.selected_video = None
+    else:
+        st.session_state.selected_video = video_url
 
-if st.button("Religion 2: Buddhism", width=110000):
-    st.session_state.selected_video = "https://youtu.be/VBCH9q87_I4?si=8JyVqzeBYiUYSAc2"
+if st.button("Religion 1: Buddhism", width=110000):
+    video_url = "https://youtu.be/VBCH9q87_I4?si=8JyVqzeBYiUYSAc2"
+    if st.session_state.selected_video == video_url:
+        st.session_state.selected_video = None
+    else:
+        st.session_state.selected_video = video_url
 
-if st.button("Theme: Family + Relationships", width=110000):
-    st.session_state.selected_video = "https://youtu.be/Tu0wjvGUBdA?si=e8_2XS0jAdLE-xh1"
-
-if st.button("Exam Practice: 12 Marker", width=110000):
-    st.session_state.selected_video = "https://youtu.be/2rYfpLWrb0U?si=h0MSGWjFFt5_RcVp"
+if st.button("Theme 1: Family + Relationships", width=110000):
+    video_url = "https://youtu.be/Tu0wjvGUBdA?si=e8_2XS0jAdLE-xh1"
+    if st.session_state.selected_video == video_url:
+        st.session_state.selected_video = None
+    else:
+        st.session_state.selected_video = video_url
 
 if st.button("Exam Practice: 6 Marker", width=110000):
-    st.session_state.selected_video = "https://youtu.be/f2yKMtprdOY?si=3cz3PWSQf3lhASro"
+    video_url = "https://youtu.be/f2yKMtprdOY?si=3cz3PWSQf3lhASro"
+    if st.session_state.selected_video == video_url:
+        st.session_state.selected_video = None
+    else:
+        st.session_state.selected_video = video_url
+
+if st.button("Exam Practice: 12 Marker", width=110000):
+    video_url = "https://youtu.be/2rYfpLWrb0U?si=h0MSGWjFFt5_RcVp"
+    if st.session_state.selected_video == video_url:
+        st.session_state.selected_video = None
+    else:
+        st.session_state.selected_video = video_url
 
 if st.session_state.selected_video:
     st.video(st.session_state.selected_video)
