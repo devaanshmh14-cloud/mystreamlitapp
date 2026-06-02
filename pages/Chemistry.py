@@ -105,10 +105,12 @@ if st.sidebar.button("Economics", width=100000):
     st.switch_page("pages/Economics.py")
 if st.sidebar.button("Maths", width=100000):
     st.switch_page("pages/Maths.py")
-if st.sidebar.button("English", width=100000):
-    st.switch_page("pages/English.py")
 if st.sidebar.button("Further Maths", width=100000):
     st.switch_page("pages/Further_Maths.py")
+st.sidebar.title("Suggestion Form")
+st.sidebar.write("Have a suggestion for a resource to add? Fill out the form below!")
+form_link = "https://docs.google.com/forms/d/e/1FAIpQLSfSt6Y8m2v6DxitkSm-VKMHLS47MA8_yGgXYQWjbsdGyBpqwA/viewform?usp=publish-editor"
+st.sidebar.link_button("Suggestion Form", form_link, width=100000)
 st.sidebar.title("Home Redirect")
 st.sidebar.write("Press this button to go back to the home page. Thanks for visiting!")
 if st.sidebar.button("Home", width=100000):
