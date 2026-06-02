@@ -103,16 +103,10 @@ if st.sidebar.button("Physics", width=100000):
     st.switch_page("pages/Physics.py")
 if st.sidebar.button("Economics", width=100000):
     st.switch_page("pages/Economics.py")
-if st.sidebar.button("Geography", width=100000):
-    st.switch_page("pages/Geography.py")
-if st.sidebar.button("German", width=100000):
-    st.switch_page("pages/German.py")
 if st.sidebar.button("Maths", width=100000):
     st.switch_page("pages/Maths.py")
 if st.sidebar.button("English", width=100000):
     st.switch_page("pages/English.py")
-if st.sidebar.button("Computer Science", width=100000):
-    st.switch_page("pages/Computer_Science.py")
 if st.sidebar.button("Further Maths", width=100000):
     st.switch_page("pages/Further_Maths.py")
 st.sidebar.title("Home Redirect")

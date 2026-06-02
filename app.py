@@ -82,7 +82,7 @@ st.markdown(
     '<h1 class="float-title"> GCSE Study Resources</h1>',
     unsafe_allow_html=True
 )
-st.write("Welcome! You have found the website with all the GCSE revision resources for most subjects. Here you will find not only notes but also past papers and key examiner reports you can make full use of. This website is full designed in order for any student to achieve a grade 9. The website contains all trusted materials which will be of use to every student. It also contains the grade boundaries of any past papers that you may have completed so that you can check where you stand. Overall I hope you find this as helpful as I do and use it to full extent. Enjoy!")
+st.write("Welcome to the GCSE Study Resources! This website is designed to provide you with comprehensive resources for all your GCSE subjects. Whether you're looking for mark schemes, practice questions, or video tutorials, we've got you covered. Just select a subject from the sidebar to get started!")
 st.set_page_config(page_title="GCSE Study Resource")
 st.markdown("""
         <style>
@@ -103,16 +103,10 @@ if st.sidebar.button("Physics", width=100000):
     st.switch_page("pages/Physics.py")
 if st.sidebar.button("Economics", width=100000):
     st.switch_page("pages/Economics.py")
-if st.sidebar.button("Geography", width=100000):
-    st.switch_page("pages/Geography.py")
-if st.sidebar.button("German", width=100000):
-    st.switch_page("pages/German.py")
 if st.sidebar.button("Maths", width=100000):
     st.switch_page("pages/Maths.py")
 if st.sidebar.button("English", width=100000):
     st.switch_page("pages/English.py")
-if st.sidebar.button("Computer Science", width=100000):
-    st.switch_page("pages/Computer_Science.py")
 if st.sidebar.button("Further Maths", width=100000):
     st.switch_page("pages/Further_Maths.py")
 st.set_page_config(layout="wide")
@@ -127,15 +121,9 @@ if st.button("Physics", width=100000):
     st.switch_page("pages/Physics.py")
 if st.button("Economics", width=100000):
     st.switch_page("pages/Economics.py")
-if st.button("Geography", width=100000):
-    st.switch_page("pages/Geography.py")
-if st.button("German", width=100000):
-    st.switch_page("pages/German.py")
 if st.button("Maths", width=100000):
     st.switch_page("pages/Maths.py")
 if st.button("English", width=100000):
     st.switch_page("pages/English.py")
-if st.button("Computer Science", width=100000):
-    st.switch_page("pages/Computer_Science.py")
 if st.button("Further Maths", width=100000):
     st.switch_page("pages/Further_Maths.py")
