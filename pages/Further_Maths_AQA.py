@@ -83,7 +83,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.write("Welcome! This page contains all the resources for your success in **AQA GCSE Further Maths Level 2**. There are all things from past papers to notes. I hope you make good use of them to get a grade 9 in your exam. Enjoy!")
+st.write("Welcome! Here you will find all the material needed for your further maths AQA level 2 exam. All  the resources uploaded are free to access and use. Just click on the buttons to find the resources you need! If you have any suggestions for resources to add, please let me know in the contact form on the home page. Thanks for visiting!")
 
 st.markdown(
     '<h2 class="float-title">Resources</h2>',
@@ -153,7 +153,7 @@ if st.button("Mark Schemes", width=110000):
     st.session_state.selected_pdf = None
     st.session_state.selected_video = None
 
-if st.button("Helpful Videos", width=110000):
+if st.button("Helpful Video Course", width=110000):
     st.session_state.show_video = not st.session_state.show_video
     st.session_state.show_past_papers = False
     st.session_state.show_mark_schemes = False
@@ -162,66 +162,57 @@ if st.button("Helpful Videos", width=110000):
 
 if st.session_state.show_past_papers:
     st.markdown('<h2 class="float-title">Past Papers</h2>', unsafe_allow_html=True)
-    if st.button("Specimen Section 1: Buddhism", width=110000):
-        pdf_url = "https://drive.google.com/file/d/1-kutIMn3M9bsQHYt5shR29foo0_XOBy4/preview"
+    if st.button("June 2024 Paper 1: Non-Calculator", width=110000):
+        pdf_url = "https://drive.google.com/file/d/1wlVqL8Swgqdg65x2av8Y4b-CeCw-t1V9/preview"
         st.session_state.selected_pdf = None if st.session_state.selected_pdf == pdf_url else pdf_url
-    if st.button("Specimen Section 2: Christianity", width=110000):
-        pdf_url = "https://drive.google.com/file/d/17Wpn-MTvcxyr9si_L4gxuWDGAcCDcGJt/preview"
+    if st.button("June 2024 Paper 2: Calculator", width=110000):
+        pdf_url = "https://drive.google.com/file/d/19ryAbeG9-19xOdeUv7ukmGW5kXcQP9qB/preview"
         st.session_state.selected_pdf = None if st.session_state.selected_pdf == pdf_url else pdf_url
-    if st.button("Specimen Section 3: Islam", width=110000):
-        pdf_url = "https://drive.google.com/file/d/1R8fWZBNTWq49hzgcVHzjRtXh5T73_lg-/preview"
+    if st.button("June 2023 Paper 1: Non-Calculator", width=110000):
+        pdf_url = "https://drive.google.com/file/d/1Y48_0pSj9iqvENhUIZdIkLTj0Q2ZyGIu/preview"
         st.session_state.selected_pdf = None if st.session_state.selected_pdf == pdf_url else pdf_url
-    if st.button("Specimen Section 4: Judaism", width=110000):
-        pdf_url = "https://drive.google.com/file/d/19RyJK9e5nJDsFZiKyVEMdPiOlc1MEYN/preview"
-        st.session_state.selected_pdf = None if st.session_state.selected_pdf == pdf_url else pdf_url
-    if st.button("Specimen Section 5: Thematics", width=110000):
-        pdf_url = "https://drive.google.com/file/d/1GP38TMIZK4HAuY0YRJC1ii3P4dMHnzt3/preview"
+    if st.button("June 2023 Paper 2: Calculator", width=110000):
+        pdf_url = "https://drive.google.com/file/d/1EZHxnNKT6Mf7wfGB76XmcMgudSHKYur1/preview"
         st.session_state.selected_pdf = None if st.session_state.selected_pdf == pdf_url else pdf_url
     if st.session_state.selected_pdf:
         st.markdown(f'<iframe src="{st.session_state.selected_pdf}" width="100%" height="800"></iframe>', unsafe_allow_html=True)
 
 if st.session_state.show_mark_schemes:
     st.markdown('<h2 class="float-title">Mark Schemes</h2>', unsafe_allow_html=True)
-    if st.button("Specimen Mark Scheme: Buddhism", width=110000):
-        pdf_url = "https://drive.google.com/file/d/1BMGHMznoV8La0-mvXa5AjktkXa40kb59/preview"
+    if st.button("June 2024 Paper 1 Mark Scheme", width=110000):
+        pdf_url = "https://drive.google.com/file/d/1ulmoSGxIHRfjE7I3qLvB2KOT6eCpYdlr/preview"
         st.session_state.selected_pdf = None if st.session_state.selected_pdf == pdf_url else pdf_url
-    if st.button("Specimen Mark Scheme: Christianity", width=110000):
-        pdf_url = "https://drive.google.com/file/d/1YnKsjoYVPHbZA2VDHrrKOpQefYYCarsE/preview"
+    if st.button("June 2024 Paper 2 Mark Scheme", width=110000):
+        pdf_url = "https://drive.google.com/file/d/1Blklf2EzY0qOKWai2orKcGGDkKYMRKhS/preview"
         st.session_state.selected_pdf = None if st.session_state.selected_pdf == pdf_url else pdf_url
-    if st.button("Specimen Mark Scheme: Islam", width=110000):
-        pdf_url = "https://drive.google.com/file/d/1je4gEYiViESaJx1jYRCMr8UHrpgl5NB_/preview"
+    if st.button("June 2023 Paper 1 Mark Scheme", width=110000):
+        pdf_url = "https://drive.google.com/file/d/1w9ov6Es5IjfQEIIJ5ByhzjSOKFfW2Czv/preview"
         st.session_state.selected_pdf = None if st.session_state.selected_pdf == pdf_url else pdf_url
-    if st.button("Specimen Mark Scheme: Judaism", width=110000):
-        pdf_url = "https://drive.google.com/file/d/1sEjTu4KwK7-_0YEPIVrVW-qtd3tBEROF/preview"
-        st.session_state.selected_pdf = None if st.session_state.selected_pdf == pdf_url else pdf_url
-    if st.button("Specimen Mark Scheme: Thematics", width=110000):
-        pdf_url = "https://drive.google.com/file/d/1T5UR0o7mFYPf8LlzO3mRNiHHjoiaYq8n/preview"
+    if st.button("June 2023 Paper 2 Mark Scheme", width=110000):
+        pdf_url = "https://drive.google.com/file/d/1LmuusBELCVL85OtZjcMD38Okn--bCEVN/preview"
         st.session_state.selected_pdf = None if st.session_state.selected_pdf == pdf_url else pdf_url
     if st.session_state.selected_pdf:
         st.markdown(f'<iframe src="{st.session_state.selected_pdf}" width="100%" height="800"></iframe>', unsafe_allow_html=True)
-
 if st.session_state.show_video:
-    st.markdown('<h2 class="float-title">Helpful Videos</h2>', unsafe_allow_html=True)
-    if st.button("Religion 1: Christianity", width=110000):
-        video_url = "https://youtu.be/Fad9NuKcDdo?si=wpOOGWZEmrphXi5Q"
-        st.session_state.selected_video = None if st.session_state.selected_video == video_url else video_url
-    if st.button("Religion 2: Buddhism", width=110000):
-        video_url = "https://youtu.be/VBCH9q87_I4?si=8JyVqzeBYiUYSAc2"
-        st.session_state.selected_video = None if st.session_state.selected_video == video_url else video_url
-    if st.button("Religion 3: Islam", width=110000):
-        video_url = "https://youtu.be/xtWlil5BqcY?si=tP2ULlgAH2jlje_7"
-        st.session_state.selected_video = None if st.session_state.selected_video == video_url else video_url
-    if st.button("Theme 1: Family + Relationships", width=110000):
-        video_url = "https://youtu.be/Tu0wjvGUBdA?si=e8_2XS0jAdLE-xh1"
-        st.session_state.selected_video = None if st.session_state.selected_video == video_url else video_url
-    if st.button("Theme 2: Peace + Conflict", width=110000):
-        video_url = "https://youtu.be/zjXeVC-Vhbw?si=Mtv-48Of8_tmlhUQ"
-        st.session_state.selected_video = None if st.session_state.selected_video == video_url else video_url
-    if st.button("Exam Practice: 6 Marker", width=110000):
-        video_url = "https://youtu.be/f2yKMtprdOY?si=3cz3PWSQf3lhASro"
-        st.session_state.selected_video = None if st.session_state.selected_video == video_url else video_url
-    if st.button("Exam Practice: 12 Marker", width=110000):
-        video_url = "https://youtu.be/2rYfpLWrb0U?si=h0MSGWjFFt5_RcVp"
-        st.session_state.selected_video = None if st.session_state.selected_video == video_url else video_url
-    if st.session_state.selected_video:
-        st.video(st.session_state.selected_video)
+    st.markdown('<h2 class="float-title">Helpful Video Course</h2>', unsafe_allow_html=True)
+    
+    video_url = "https://youtube.com/playlist?list=PLJ6MxZJs9Ht9B4ZOxMQA8Qw4XQKOwae2q&si=9ZVKnjwFReafKY7Y"
+    
+    st.markdown(
+        f'''
+        <a href="{video_url}" target="_blank" style="text-decoration: none;">
+            <button style="
+                width: 100%; 
+                padding: 0.5rem 1rem; 
+                background-color: #55828B; 
+                color: #C9E4CA; 
+                border: none; 
+                border-radius: 0.5rem; 
+                cursor: pointer; 
+                font-size: 1rem;
+            ">1st Class Maths Course</button>
+        </a>
+        ''',
+        unsafe_allow_html=True
+    )
+    

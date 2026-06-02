@@ -82,7 +82,7 @@ st.markdown(
     '<h1 class="float-title">Religious Studies</h1>',
     unsafe_allow_html=True
 )
-st.write("Welcome! Here you will find all the material needed to ace your religious studies exam. All  the resources uploaded has helped me get a grade 9 so you can fully rely on them. Thanks for trusting us with your revision and hopefully you benefit from these resources.")
+st.write("Welcome! Here you will find all the material needed for your religious studies exam. All  the resources uploaded are free to access and use. Just click on the buttons to find the resources you need! If you have any suggestions for resources to add, please let me know in the contact form on the home page. Thanks for visiting!")
 st.set_page_config(page_title="GCSE Study Resource")
 st.markdown("""
         <style>

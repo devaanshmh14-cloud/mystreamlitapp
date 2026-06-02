@@ -83,7 +83,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.write("Welcome! This page contains all the resources for your success in **AQA GCSE Religious Studies Short Course**. There are all things from past papers to notes. I hope you make good use of them to get a grade 9 in your exam. Enjoy!")
+st.write("Welcome! This page contains all the resources for your success in AQA GCSE Religious Studies (Short Course). All the resources uploaded are free to access and use. I hope you found it helpful!")
 
 st.markdown(
     '<h2 class="float-title">Resources</h2>',
