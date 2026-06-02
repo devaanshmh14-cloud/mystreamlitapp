@@ -38,12 +38,12 @@ st.markdown(f"""
 
 st.markdown(f"""
 <style>
-/* Top header bar */
+
 [data-testid="stHeader"] {{
     background-color: {PALETTE["card"]};
 }}
 
-/* Remove white gap above the app */
+
 .block-container {{
     padding-top: 1rem;
 }}

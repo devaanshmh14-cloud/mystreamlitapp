@@ -38,12 +38,12 @@ st.markdown(f"""
 
 st.markdown(f"""
 <style>
-/* Top header bar */
+
 [data-testid="stHeader"] {{
     background-color: {PALETTE["card"]};
 }}
 
-/* Remove white gap above the app */
+
 .block-container {{
     padding-top: 1rem;
 }}
@@ -53,8 +53,8 @@ st.markdown(f"""
 st.markdown("""
 <style>
 button {
-    background-color: #55828B !important;  /* your desired color */
-    color: #C9E4CA !important;             /* text color */
+    background-color: #55828B !important;  
+    color: #C9E4CA !important;             
 }
 </style>
 """, unsafe_allow_html=True)
